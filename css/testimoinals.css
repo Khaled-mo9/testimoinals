@@ -1,0 +1,186 @@
+/* start variables */
+:root {}
+
+/* end variables */
+/*start global rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    background-color: hsl(210, 46%, 95%);
+    margin: 0;
+    padding: 0;
+}
+
+/*-------- start const-----------------------*/
+.image {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 81%);
+}
+
+.title h2 {
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.main-p {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.second-p {
+    color: hsl(0, 0%, 81%);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.title span {
+    color: hsl(0, 0%, 81%);
+    font-size: 13px;
+}
+/*-------- end const-----------------------*/
+/*--------------------- start testimoinals-------------------------------*/
+.testimoinals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.content {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 100px 0px; */
+}
+
+.box {
+    background-color: hsl(263, 55%, 52%);
+    padding: 30px;
+    max-width: 570px;
+    position: relative;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.daniel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 94px;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 120px;
+}
+
+.box .header {
+    display: flex;
+}
+
+.box .title {
+    padding-left: 20px;
+}
+
+.daniel .title h2 {
+    color: white;
+}
+
+.daniel .title span {
+    color: hsl(0, 0%, 81%);
+    font-size: 13px;
+}
+
+.daniel .main-p {
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+/*---------*/
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+    max-width: 290px;
+    margin: 0px 20px 0 0;
+}
+
+/*------------*/
+.jeanette {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 250px;
+    margin: 20px 20px 0 0;
+}
+
+.kira {
+    max-width: 290px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.jeanette .title h2,
+.jeanette .main-p,
+.kira .title h2,
+.kira .main-p {
+    color: hsl(219, 29%, 14%);
+}
+
+.jeanette .second-p,
+.kira .second-p {
+    color: hsl(217, 19%, 35%);
+}
+
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+    max-width: 610px;
+    margin: 20px 20px 0 0;
+}
+
+.patrick .title h2,
+.patrick .main-p {
+    color: hsl(0, 0%, 100%);
+}
+
+.patrick .second-p {
+    color: hsl(0, 0%, 81%);
+}
+/*--------------------- end testimoinals-------------------------------*/
+/*----- responsive -------*/
+@media (max-width:375px) {
+    .box {
+        margin: 10px;
+        max-width: 570px;
+    }
+
+    .daniel::after {
+        right: 20px;
+        width: 120px;
+        height: 110px;
+    }
+
+    .jeanette,
+    .jonathan,
+    .kira,
+    .patrick {
+        margin: 10px;
+        max-width: 570px;
+    }
+
+}
